@@ -3,6 +3,7 @@
   <head>
     <title>DOM I</title>
     <link rel="stylesheet" href="./styles.css">
+    <script src="index.js"></script>
   </head>
   <body>
     <div class="digits">
@@ -12,5 +13,16 @@
       <div class="digit" id="msHundreds">-</div>
       <div class="digit" id="msTens">-</div>
     </div>
+
+    <script src='index.js'>
+      let counter = 0;
+      let secondTens = document.getElementById("secondTens");
+      let secondOnes = document.getElementById("secondOnes");
+      let msHundreds = document.getElementById("msHundreds");
+      let msTens = document.getElementById("msTens");
+      let newCounter = counter.toString();
+      msTens.textContent = `${newCounter}`;
+        
+</script>
   </body>
 </html>
